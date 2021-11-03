@@ -49,32 +49,78 @@
 <!--Final da navegação-->
 
 <div id="corpo" class="container-fluid">   
-  <div id="titulodev" class="container-fluid text-center pt-3 pb-3">
-    <h1>Desenvolvedor Web e Java</h1>
-    <span id="imgdev">
-    <img src="img/imgdev.jpg" class="img-fluid"alt="Desenvolvimento Web e Java">
-    </span>    
-      <div class="container pt-3">
-        <div class="card-body">
-          <h5 class="card-title">Descrição do curso</h5>
-          <p class="text-start">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras eu mauris ut justo feugiat pharetra vitae eu ex. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Quisque placerat lacus orci, a laoreet nunc rutrum ut.</p><p class="text-start">Sed eget tortor ultricies libero porta consequat. Donec volutpat libero est, egestas tempus elit euismod vitae. Donec tristique dignissim dignissim. Suspendisse varius interdum euismod. Proin interdum, libero vitae tempor malesuada, felis purus ultricies ligula, eget dictum lorem odio eu nunc. Nam sollicitudin pretium massa eu iaculis.</p><p class="text-start">Quisque efficitur ut lorem et congue. Orci varius natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Fusce et purus tempus, suscipit quam eget, ullamcorper sapien. Mauris efficitur non nisi in imperdiet. Nullam luctus egestas pellentesque. Etiam in fringilla ligula.</p>
-          <a href="#" class="btn btn-warning">Ver valor</a>
-        </div>
-      </div>        
+  <div id="titulodev" class="container pt-3 pb-3">
+    <iframe width="100%" height="600" src="https://www.youtube.com/embed/EcO9mWMqROY" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
   </div>
-<!--Final descrição do curso-->
+<!--Final do video youtube-->
 
   <div class="container">    
-    <div class="row pt-3" id="texto1">        
-      <h1>O primeiro emprego de programador</h1>
-      <p>Cras tincidunt aliquam ipsum, nec mattis mi faucibus eget. Suspendisse potenti. Curabitur consectetur purus vel ante bibendum sollicitudin vitae gravida orci. Suspendisse facilisis lacinia velit. Cras a erat ac arcu pretium auctor in imperdiet dolor. Nullam facilisis sapien et nunc blandit, a varius lectus consequat. Sed id commodo velit.</p>          
-    </div>    
-    <div class="row pt-3 pb-3">
-      <iframe width="100%" height="500" src="https://www.youtube.com/embed/F3FcaW04czg" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+    <div class="container-fluid pt-3" id="texto1">        
+      <div class="row pb-3">
+        <!-- Botão para abrir modal -->
+        <button type="button" class="btn btn-warning btn-lg" data-bs-toggle="modal" data-bs-target="#staticBackdrop">
+        Formulário para assinar o plano anual
+        </button>
+      </div>
+      <!-- Modal -->
+      <div class="modal fade" id="staticBackdrop" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
+        <div class="modal-dialog modal-lg">
+          <div class="modal-content">
+            <div class="modal-header">
+              <h5 class="modal-title" id="staticBackdropLabel">Formulário para assinar o plano anual:</h5>
+              <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body">
+              <form class="row">
+                <div class="row pt-3">
+                  <div class="col">
+                    <label for="inputName" class="form-label">Nome</label>
+                    <input type="text" class="form-control" aria-label="First name">
+                  </div>        
+                  <div class="col">
+                    <label for="inputEmail4" class="form-label">E-mail</label>
+                    <input type="email" class="form-control" id="inputEmail4">
+                  </div> 
+                </div>
+                <div class="row pt-3">      
+                  <div class="col">
+                    <label for="inputAddress" class="form-label">Endereço</label>
+                    <input type="text" class="form-control" id="inputAddress">
+                  </div>                      
+                  <div class="col">
+                    <label for="inputZip" class="form-label">CEP</label>
+                    <input type="text" class="form-control" id="inputZip">
+                  </div>
+                </div> 
+                <div class="row pt-3 pb-3">
+                  <div class="col">
+                    <label for="inputTel" class="form-label">Telefone</label>
+                    <input type="text" class="form-control" id="inputTel">
+                  </div>
+                  <div class="col">
+                    <label for="inputText" class="form-label">Gostaria de um contato da Alfamídia</label>
+                    <select id="inputState" class="form-select">
+                      <option selected>Selecione...</option>
+                      <option>por Whatsapp</option>
+                      <option>por Telefone</option>
+                      <option>por E-mail</option>              
+                    </select>
+                  </div>             
+                </div>
+              </form>
+            </div>
+            <div class="modal-footer">
+              <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Fechar</button>
+              <button type="submit" class="btn btn-warning">Enviar</button>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!--Final da modal-->        
     </div>
   </div>
-</div>
-<!--Final do vídeo youtube-->
+  <!--Final container modal/formulário-->
+
 
 <footer id="footer">
     <div class="container">
