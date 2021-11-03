@@ -55,7 +55,7 @@
 <!--Final do video youtube-->
 
   <div class="container">    
-    <div class="container-fluid pt-3" id="texto1">        
+    <div class="container-fluid pt-3 pb-3" id="texto1">        
       <div class="row pb-3">
         <!-- Botão para abrir modal -->
         <button type="button" class="btn btn-warning btn-lg" data-bs-toggle="modal" data-bs-target="#staticBackdrop">
@@ -67,8 +67,7 @@
         <div class="modal-dialog modal-lg">
           <div class="modal-content">
             <div class="modal-header">
-              <h5 class="modal-title" id="staticBackdropLabel">Formulário para assinar o plano anual:</h5>
-              <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+              <h5 class="modal-title" id="staticBackdropLabel">Formulário para assinar o plano anual:</h5>              
             </div>
             <div class="modal-body">
               <form class="row">
@@ -91,7 +90,13 @@
                     <label for="inputZip" class="form-label">CEP</label>
                     <input type="text" class="form-control" id="inputZip">
                   </div>
-                </div> 
+                </div>
+                <div class="row pt-3">
+                  <div class="input-group">
+                    <span class="input-group-text">Observações</span>
+                    <textarea class="form-control" aria-label="With textarea"></textarea>
+                  </div>
+                </div>
                 <div class="row pt-3 pb-3">
                   <div class="col">
                     <label for="inputTel" class="form-label">Telefone</label>
@@ -107,11 +112,13 @@
                     </select>
                   </div>             
                 </div>
+                <div class="row d-grid gap-2 col-6 mx-auto">
+                  <button type="submit" class="btn btn-warning mx-auto">Enviar</button>
+                </div>
               </form>
             </div>
             <div class="modal-footer">
-              <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Fechar</button>
-              <button type="submit" class="btn btn-warning">Enviar</button>
+              <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Fechar</button>              
             </div>
           </div>
         </div>
